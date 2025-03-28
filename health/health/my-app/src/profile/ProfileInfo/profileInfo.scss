@@ -1,0 +1,89 @@
+@import '../../styles/variables';
+
+.profile {
+  background-color: $white;
+  border-radius: 8px;
+  padding: $spacing-xl;
+  margin-bottom: $spacing-lg;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $spacing-xl;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      gap: $spacing-lg;
+    }
+  }
+
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: $font-xl;
+  }
+
+  &__role {
+    color: $text-secondary;
+    margin: $spacing-xs 0;
+  }
+
+  &__location {
+    color: $text-secondary;
+    font-size: $font-sm;
+  }
+
+  &__edit {
+    padding: $spacing-sm $spacing-lg;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $background-light;
+    }
+  }
+
+  &__section {
+    margin-top: $spacing-xl;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $spacing-lg;
+    }
+
+    &-title {
+      font-size: $font-lg;
+      margin: 0;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-lg;
+
+    &-item {
+      h4 {
+        color: $text-secondary;
+        margin: 0 0 $spacing-xs 0;
+        font-weight: normal;
+      }
+
+      p {
+        margin: 0;
+        font-weight: 500;
+      }
+    }
+  }
+}

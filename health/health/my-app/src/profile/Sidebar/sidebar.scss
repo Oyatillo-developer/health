@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+
+.sidebar {
+  width: 240px;
+  background-color: $white;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid $border-color;
+  padding: $spacing-lg 0;
+
+  &__logo {
+    padding: 0 $spacing-lg;
+    margin-bottom: $spacing-xl;
+    
+    img {
+      height: 32px;
+    }
+  }
+
+  &__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__nav-item {
+    padding: $spacing-md $spacing-lg;
+    display: flex;
+    align-items: center;
+    color: $text-secondary;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $background-light;
+      color: $primary-color;
+    }
+
+    &--active {
+      background-color: $background-light;
+      color: $primary-color;
+      border-right: 3px solid $primary-color;
+    }
+
+    svg {
+      margin-right: $spacing-md;
+    }
+  }
+}

@@ -1,0 +1,186 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D0D0D0;
+    .health2{
+        width: 800px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #ffffff;
+        .img2{
+            width: 50%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 103%;
+            }
+        }
+        .back2{
+            width: 50%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            .close2{
+                width: 100%;
+                height: 5vh;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                button{
+                    width: 10%;
+                    height: 4vh;
+                    border: none;
+                    background: none;
+                    font-size: 15px;
+                    color: #000000;
+                    font-weight: 300;
+                    cursor: pointer;
+                }
+                h2{
+                    color: #ffffff;
+                }
+            }
+            .new2{
+                width: 100%;
+                height: 60vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                .me2{
+                    width: 100%;
+                    height: 10vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    h1{
+                        font-size: 40px;
+                        color: #000000;
+                        font-weight: 500;
+                        font-family: "Roboto", serif;
+                    }
+                    .to2{
+                        width: 55%;
+                        height: 4vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        h1{
+                            font-size: 15px;
+                            color: #000000;
+                            font-weight: 400;
+                            font-family: "Roboto", serif;
+                        }
+                        a{
+                            font-size: 15px;
+                            color: #3B9AB8;
+                            font-weight: 400;
+                            font-family: "Roboto", serif;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .user2{
+                    width: 80%;
+                    height: 55vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    .you2{
+                        width: 100%;
+                        height: 8vh;
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-around;
+                        flex-direction: column;
+                        h1{
+                            font-size: 13px;
+                            color: #000000;
+                            font-weight: 300;
+                            font-family: "Roboto", serif;
+                        }
+                        input{
+                            width: 100%;
+                            height: 5vh;
+                            border: 1px solid #B6B6B8;
+                            border-radius: 10px;
+                            outline: none;
+                            padding: 0 10px;
+                            font-size: 13px;
+                            color: #000000;
+                            font-weight: 300;
+                            font-family: "Roboto", serif;
+                            cursor: pointer;
+                            &::placeholder{
+                                font-size: 13px;
+                                color: #585656;
+                                font-weight: 300;
+                                font-family: "Roboto", serif;
+                            }
+                        }
+                    }
+                    button{
+                        width: 100%;
+                        height: 6vh;
+                        border: none;
+                        border-radius: 10px;
+                        background: #3B9AB8;
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: #ffffff;
+                        font-family: "Roboto", serif;
+                        cursor: pointer;
+                        &:active{
+                            background: #208dae;
+                        }
+                    }
+                    .me12{
+                        width: 100%;
+                        height: 5vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        .read2{
+                            width: 40%;
+                            height: 5vh;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            h1{
+                                font-size: 15px;
+                                color: #000000;
+                                font-weight: 400;
+                                font-family: "Roboto", serif;
+                            }
+                            input{
+                                width: 20%;
+                                height: 2vh;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

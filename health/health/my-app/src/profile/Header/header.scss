@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-lg;
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  margin-left: 240px;
+
+  &__title {
+    font-size: $font-lg;
+    margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+  }
+
+  &__notification {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $text-secondary;
+    
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+  }
+}
